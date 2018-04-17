@@ -1,0 +1,71 @@
+#!/usr/bin/env jet.lang
+
+/dev/stdin:
+   Please . Enter your name . /dev/stdout :Name
+   Please . Enter your allegiance . /dev/stdout :Allegiance
+   Please . Enter your weapon (Sword|Spear|Mace) . /dev/stdout :Weapon [: Sword|Spear|Mace]
+   Please . Enter your side-arm (Dagger|Shield|Buckler) . /dev/stdout :Side Arm [: Dagger| Shield | Buckler]
+
+Your name is {Name} . 
+ and your allegiance is {Allegiance} .
+   /dev/stdout
+
+Your weapon is {Weapon} . 
+ and your Side-Arm is {Side Arm} .
+   /dev/stdout
+
+
+Hero [
+   1.85cm; 120kg; (Name = {:Some Name = Random; J.; Hacker ? Unknown} from; the
+     house of; {:Allegiance = Dark Side ? Unknown })
+   Weapon = {:Weapon = Sword ? Unknown}
+   Side Arm = {:Side Arm = Dagger ? Unknown}
+   Journey = [
+   ]
+]
+
+You = :Hero! Name = {Name}; Weapon = {Weapon}; Side Arm = {Side Arm}
+
+Start Journey = A Hero; A Journey; A Quest ->
+   {A Hero} / Journey = {A Journey}
+   ...
+   if? {A Hero} / Allegiance* = (Dark; Side); then? 
+      You CHOOSE the DARK SIDE . Passion is ALL for you .   #<- no need to 
+                                                            # associate '.' 
+                                                            # operator with 
+                                                            # /dev/stdout but 
+                                                            # it's _nice_ to 
+                                                            # do so
+   else?
+      You have CHOSEN the LIGHT SIDE . Beware of the DARK SIDE . 
+         for they . are ready to Anger . /dev/stdout
+   end-if?
+   
+   Assigning Quest . /dev/stdout
+   {A Hero} / Quest = {A Quest}
+   
+   Quests [
+      Dark Side [
+         whatever = wherever
+         1
+         2
+         3
+         wherever and = whatever; and; wherever
+         Func = A; B; C -> {A} ** {B} - {:4} - {A} * {B} # ALL is TEXT ie. a 
+                                                         # Dictionary with Additionally IndexedElements
+      ]
+   ]
+   
+   if? (not? {A Hero} / Quest); then?
+      /dev/stdin:
+         Please Enter your Quest out of . /dev/stdout
+      
+   {A Hero} # Returning is simple
+
+
+Do Journey = A Hero; A Journey; A Quest ->
+
+
+do?
+   
+while? 

@@ -1,0 +1,30 @@
+
+A Text [
+   : Hello world
+   1; 2; 3; one; two; three; four
+   
+   Bla bla = Foo; bar
+   Foo = Zan; Zee; bar
+   
+   Something Funcy = a; b; c -> 
+      The {b} multiplied by {c} is; {b} `* {b} . The {c}ontext . !/dev/stdout !/dev/stderr
+]
+
+{A Text % 0} = Hello world
+{A Text % 0*} = Hello; world
+{A Text % 1} = 1
+{A Text % 2} = 2
+{A Text % 3} = 3
+{A Text % 4} = one
+...
+
+{A Text / Bla bla} = > Foo; Bar
+{A Text / Bla bla*} = > Foo; Bar
+{A Text / Bla bla % 0} = > Foo
+{A Text / Bla bla % 1} = > Bar
+
+{A Text {:Whatever} {:Wherever} {:Cee}} = The Wherever multiplied by ... !/dev/stderr
+A Text! Whatever; (3; haha); (4; lol) = The (3; haha) * (4; lol) multi ... !/dev/stdout
+
+Some Var = A Text! (Hi; hi; hi); 3; 4
+

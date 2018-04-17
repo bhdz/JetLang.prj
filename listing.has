@@ -1,0 +1,38 @@
+#!/usr/bin/env cat2
+
+#
+# Cat2 is like {/bin/cat} but EATS the first HASHBANG AND ALL THE WHITESPACE LINES TILL IT FINDS SOMETHING STARTING WITH NON-WHITESPACE. User must SELECT an OPTION to SUPPRESS that BEHAVIOR.
+#  Part of: ThreeBandidos.prj {cat2, dawg, butler} [[ !;-) ]]
+# 
+
+#
+# Listing this Folder .HAS
+#
+: LISTING [os/fs]
+:: EXPLANATION [plain/text]
+
+: listing.has
+:: this file
+
+: resources/
+:: All documentation, artwork, roadmaps, and manuals 
+
+: src/
+:: Where the source (will|shall) reside
+
+: LICENSE
+:: LICENSE file. Holds? License text = BSD?("your prj, do whatever, leave my name out of it") | GPLv3
+
+: sample.reverse.jet
+:: A Short script that Demonstrates the Power of Jet (Inspired by Thoth or Djehuti -> djet -> jet)
+:: It is reverse because I simply changed the operators for :refering ["Cartouches"] to a more standard type
+:: That is, I changed [] with {} and vice-versa. Otherwise it's just the djet idea ;-)
+
+: WHY
+:: A WHY file. WHY should THERE BE ANOTHER LANGUAGE
+
+: tests/
+:: Where tests should reside.
+
+: this.is
+:: A short descriptive file of WHAT THIS IS.
